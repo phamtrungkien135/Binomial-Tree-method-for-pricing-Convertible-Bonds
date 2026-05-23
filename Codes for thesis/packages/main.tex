@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese,english]{babel}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx}
+\usepackage{qrcode}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=red]{hyperref}
+\usepackage{indentfirst}
+\usepackage{subcaption}            
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{15pt}
+\fancyhf{}
+\lhead{\textbf{Thesis}}
+\rhead{\textbf{22/05/2026}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\pagestyle{fancy}
+\usepackage{listings}
+\lstset{
+  language=R,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{green!50!black},
+  stringstyle=\color{orange},
+  breaklines=true,
+  frame=single
+}
+\begin{document}
+\setstretch{1.5}
+\thispagestyle{empty}
+\input{Others/page1}
+\newpage
+\input{Others/page2}
+\newpage
+\input{Contents/page3}
+\newpage
+\input{Contents/page4}
+\newpage
+\begin{center}
+\qrcode{https://github.com/phamtrungkien135/Binomial-Tree-method-for-pricing-Convertible-Bonds}
+\end{center}
+\end{document}
